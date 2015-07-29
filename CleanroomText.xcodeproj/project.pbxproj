@@ -14,6 +14,7 @@
 		3B08AF221B27E4EE007A72CB /* StringTrimExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AF201B27E4EE007A72CB /* StringTrimExtension.swift */; };
 		3B08AF261B27E508007A72CB /* PluralizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AF241B27E508007A72CB /* PluralizerTests.swift */; };
 		3B08AF271B27E508007A72CB /* StringTrimExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08AF251B27E508007A72CB /* StringTrimExtensionTests.swift */; };
+		3B2B21841B69464A0049055D /* UIFontSizingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2B21831B69464A0049055D /* UIFontSizingExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		3B08AF201B27E4EE007A72CB /* StringTrimExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTrimExtension.swift; sourceTree = "<group>"; };
 		3B08AF241B27E508007A72CB /* PluralizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluralizerTests.swift; sourceTree = "<group>"; };
 		3B08AF251B27E508007A72CB /* StringTrimExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTrimExtensionTests.swift; sourceTree = "<group>"; };
+		3B2B21831B69464A0049055D /* UIFontSizingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontSizingExtension.swift; sourceTree = "<group>"; };
 		3B2D424F1B347AD30043FE38 /* Info-Framework.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Framework.plist"; sourceTree = "<group>"; };
 		3B2D42501B347AD30043FE38 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Tests.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			children = (
 				3B08AF1F1B27E4EE007A72CB /* Pluralizer.swift */,
 				3B08AF201B27E4EE007A72CB /* StringTrimExtension.swift */,
+				3B2B21831B69464A0049055D /* UIFontSizingExtension.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2B21841B69464A0049055D /* UIFontSizingExtension.swift in Sources */,
 				3B08AF221B27E4EE007A72CB /* StringTrimExtension.swift in Sources */,
 				3B08AF211B27E4EE007A72CB /* Pluralizer.swift in Sources */,
 			);
@@ -507,6 +511,7 @@
 				3B0168741B44871000E330CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B08AEFC1B27E433007A72CB /* Build configuration list for PBXProject "CleanroomText" */ = {
 			isa = XCConfigurationList;
