@@ -1,3 +1,5 @@
+## Using CleanroomText
+
 ### Pluralizer
 
 `Pluralizer`s are used to represent multiple *forms* of a *term* intended to be used with specific *quantities*.
