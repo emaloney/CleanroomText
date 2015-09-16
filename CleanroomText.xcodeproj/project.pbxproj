@@ -19,7 +19,6 @@
 		3BFFEBDC1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBD01BAA19B00042FFF5 /* StringTrimExtension.swift */; };
 		3BFFEBDD1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBD01BAA19B00042FFF5 /* StringTrimExtension.swift */; };
 		3BFFEBDE1BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBD11BAA19B00042FFF5 /* UIFontSizingExtension.swift */; };
-		3BFFEBDF1BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBD11BAA19B00042FFF5 /* UIFontSizingExtension.swift */; };
 		3BFFEBE01BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBD11BAA19B00042FFF5 /* UIFontSizingExtension.swift */; };
 		3BFFEBE11BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBD11BAA19B00042FFF5 /* UIFontSizingExtension.swift */; };
 		3BFFEBE51BAA19BC0042FFF5 /* PluralizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBE31BAA19BC0042FFF5 /* PluralizerTests.swift */; };
@@ -517,7 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFEBDF1BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */,
 				3BFFEBDB1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */,
 				3BFFEBD31BAA19B00042FFF5 /* Pluralizer.swift in Sources */,
 			);
