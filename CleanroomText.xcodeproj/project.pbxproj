@@ -10,6 +10,10 @@
 		3B00E5681BA3782D0011486D /* CleanroomText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E55D1BA3782D0011486D /* CleanroomText.framework */; };
 		3B00E5861BA379830011486D /* CleanroomText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E57C1BA379830011486D /* CleanroomText.framework */; };
 		3B00E5A41BA37A420011486D /* CleanroomText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E59A1BA37A420011486D /* CleanroomText.framework */; };
+		3B05ECF11BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05ECF01BFD318A001D7A55 /* StringRepeatExtension.swift */; };
+		3B05ECF21BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05ECF01BFD318A001D7A55 /* StringRepeatExtension.swift */; };
+		3B05ECF31BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05ECF01BFD318A001D7A55 /* StringRepeatExtension.swift */; };
+		3B05ECF41BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05ECF01BFD318A001D7A55 /* StringRepeatExtension.swift */; };
 		3BFFEBD21BAA19B00042FFF5 /* Pluralizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBCE1BAA19B00042FFF5 /* Pluralizer.swift */; };
 		3BFFEBD31BAA19B00042FFF5 /* Pluralizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBCE1BAA19B00042FFF5 /* Pluralizer.swift */; };
 		3BFFEBD41BAA19B00042FFF5 /* Pluralizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEBCE1BAA19B00042FFF5 /* Pluralizer.swift */; };
@@ -62,6 +66,7 @@
 		3B00E5851BA379830011486D /* CleanroomTextUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomTextUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E59A1BA37A420011486D /* CleanroomText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E5A31BA37A420011486D /* CleanroomTextUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomTextUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B05ECF01BFD318A001D7A55 /* StringRepeatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepeatExtension.swift; sourceTree = "<group>"; };
 		3B38DBD01BA76428000986DF /* Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD11BA76428000986DF /* Debug-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-OSX.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD21BA76428000986DF /* Debug-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				3BFFEBCE1BAA19B00042FFF5 /* Pluralizer.swift */,
+				3B05ECF01BFD318A001D7A55 /* StringRepeatExtension.swift */,
 				3BFFEBD01BAA19B00042FFF5 /* StringTrimExtension.swift */,
 				3BFFEBD11BAA19B00042FFF5 /* UIFontSizingExtension.swift */,
 			);
@@ -500,6 +506,7 @@
 				3BFFEBDE1BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */,
 				3BFFEBDA1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */,
 				3BFFEBD21BAA19B00042FFF5 /* Pluralizer.swift in Sources */,
+				3B05ECF11BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFEBDB1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */,
+				3B05ECF21BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */,
 				3BFFEBD31BAA19B00042FFF5 /* Pluralizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +545,7 @@
 				3BFFEBE01BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */,
 				3BFFEBDC1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */,
 				3BFFEBD41BAA19B00042FFF5 /* Pluralizer.swift in Sources */,
+				3B05ECF31BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +565,7 @@
 				3BFFEBE11BAA19B00042FFF5 /* UIFontSizingExtension.swift in Sources */,
 				3BFFEBDD1BAA19B00042FFF5 /* StringTrimExtension.swift in Sources */,
 				3BFFEBD51BAA19B00042FFF5 /* Pluralizer.swift in Sources */,
+				3B05ECF41BFD318A001D7A55 /* StringRepeatExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
