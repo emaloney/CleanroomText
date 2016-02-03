@@ -8,9 +8,6 @@
 
 import Foundation
 
-/**
- Adds a `replicate()` function to `String`.
- */
 extension String
 {
     /**
