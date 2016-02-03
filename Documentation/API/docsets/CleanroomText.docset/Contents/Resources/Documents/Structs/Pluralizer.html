@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pluralizer Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Pluralizer" class="dashAnchor"></a>
+    <a title="Pluralizer Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CleanroomText Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomText"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CleanroomText Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Pluralizer Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Pluralizer.html">Pluralizer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Pluralizer</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Pluralizer</span></code></pre>
+
+                </div>
+              </div>
+            <p>A <code>Pluralizer</code> instance represents a <em>term</em> that can take multiple <em>forms</em>
+depending on a <em>quantity</em>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV13CleanroomText10Pluralizer8singularSS"></a>
+                    <a name="//apple_ref/swift/Property/singular" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV13CleanroomText10Pluralizer8singularSS">singular</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the form of the term to be used when the quantity is one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">singular</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV13CleanroomText10Pluralizer6pluralSS"></a>
+                    <a name="//apple_ref/swift/Property/plural" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV13CleanroomText10Pluralizer6pluralSS">plural</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the form of the term to be used when the quantity is greater
+than one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">plural</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV13CleanroomText10Pluralizer4noneGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/none" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV13CleanroomText10Pluralizer4noneGSqSS_">none</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the form of the term to be used when the quantity is zero. 
+If <code>nil</code>, the value of the <code><a href="../Structs/Pluralizer.html#/s:vV13CleanroomText10Pluralizer6pluralSS">plural</a></code> property will be used when the quantity
+is zero.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">none</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13CleanroomText10PluralizercFT8singularSS6pluralSS4noneGSqSS__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(singular:plural:none:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13CleanroomText10PluralizercFT8singularSS6pluralSS4noneGSqSS__S0_">init(singular:plural:none:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code><a href="../Structs/Pluralizer.html">Pluralizer</a></code> instance with the forms of the term it will
+represent.</p>
+
+<p>Within the strings specified for the various forms, the text <q>`{#}`</q> will 
+be replaced with the quantity passed to the <code>termWithQuantity()</code> function.</p>
+
+<p>:param:     singular Specifies the singular form of the term, which is used
+            when the applied quantity is one.</p>
+
+<p>:param:     plural Specifies the plural form of the term, which is used when
+            the applied quantity is greater than one.</p>
+
+<p>:param:     none Specifies the form of the term to be used when the
+            applied quantity is zero. This parameter is optional; if 
+            this value is not specified or is <code>nil</code>, the <code><a href="../Structs/Pluralizer.html#/s:vV13CleanroomText10Pluralizer6pluralSS">plural</a></code> form
+            will be used when the quantity is zero.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">none</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13CleanroomText10PluralizercFT8allFormsSS_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(allForms:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13CleanroomText10PluralizercFT8allFormsSS_S0_">init(allForms:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code><a href="../Structs/Pluralizer.html">Pluralizer</a></code> that uses the same form for every quantity.</p>
+
+<p>Within the specified string, the text <q>`{#}`</q> will be replaced with the
+quantity passed to the <code>termWithQuantity()</code> function.</p>
+
+<p>:param:     allForms Specifies the value to use for all forms.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">allForms</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13CleanroomText10Pluralizer15termForQuantityFSiSS"></a>
+                    <a name="//apple_ref/swift/Method/termForQuantity(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13CleanroomText10Pluralizer15termForQuantityFSiSS">termForQuantity(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Given a quantity, this function returns the correct form of the term
+represented by the receiver.</p>
+
+<p>:param:     quantity The quantity to apply.</p>
+
+<p>:returns:   The pluralized form approrpriate for <code>quantity</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">termForQuantity</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

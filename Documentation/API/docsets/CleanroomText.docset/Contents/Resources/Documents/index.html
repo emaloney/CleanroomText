@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CleanroomText  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="CleanroomText  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CleanroomText Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomText"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CleanroomText Reference</a>
+        <img id="carat" src="img/carat.png" />
+        CleanroomText  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Pluralizer.html">Pluralizer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#using_cleanroomtext' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='using_cleanroomtext'>Using CleanroomText</h2>
+<a href='#pluralizer' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='pluralizer'>Pluralizer</h3>
+
+<p><code>Pluralizer</code>s are used to represent multiple <em>forms</em> of a <em>term</em> intended to be used with specific <em>quantities</em>.</p>
+
+<p>Here&rsquo;s an example of a <code>Pluralizer</code> that represents two forms of the term <q>`goose`</q>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gooser</span> <span class="o">=</span> <span class="kt">Pluralizer</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="s">"goose"</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="s">"geese"</span><span class="p">)</span>
+</code></pre>
+
+<p>By calling the <code>termForQuantity()</code> function, <code>gooser</code> can then be used to select the appropriate form of the term for a given quantity:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "goose"</span>
+<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "geese"</span>
+</code></pre>
+<a href='#quantity_replacement' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='quantity_replacement'>Quantity Replacement</h4>
+
+<p>You can also refer to the value passed to the <code>termForQuantity()</code> function from within the terms passed to <code>Pluralizer</code>&rsquo;s constructor:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gooser</span> <span class="o">=</span> <span class="kt">Pluralizer</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="s">"one goose"</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="s">"{#} geese"</span><span class="p">)</span>
+</code></pre>
+
+<p>With this type of <code>gooser</code>, the return values would be different:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "one goose"</span>
+<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "3 geese"</span>
+</code></pre>
+<a href='#zero_quantities' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='zero_quantities'>Zero Quantities</h4>
+
+<p>Normally, when specifying a quantity of zero, the <code>Pluralizer</code> uses the plural form of the term:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">noGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>       <span class="c1">// noGeese will be "0 geese"</span>
+</code></pre>
+
+<p>If needed, the zero-quantity form of the term can also be explicitly specified to the initializer:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gooser</span> <span class="o">=</span> <span class="kt">Pluralizer</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="s">"one goose"</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="s">"{#} geese"</span><span class="p">,</span> <span class="nv">none</span><span class="p">:</span> <span class="s">"no geese"</span><span class="p">)</span>
+</code></pre>
+
+<p>With this type of <code>gooser</code>, the return values would be different:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">noGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>       <span class="c1">// noGeese will be "no geese"</span>
+<span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "one goose"</span>
+<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "3 geese"</span>
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

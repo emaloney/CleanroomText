@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UIFont Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/UIFont" class="dashAnchor"></a>
+    <a title="UIFont Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CleanroomText Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomText"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CleanroomText Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UIFont Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Pluralizer.html">Pluralizer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UIFont</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Measuring%20whole%20pixels%20with%20word%20wrapping"></a>
+                <a name="//apple_ref/swift/Section/Measuring whole pixels with word wrapping" class="dashAnchor"></a>
+                <a href="#/Measuring%20whole%20pixels%20with%20word%20wrapping">
+                  <h3 class="section-name">Measuring whole pixels with word wrapping</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat_VSC6CGSize">sizeString(_:maxWidth:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the line break mode <code>.ByWordWrapping</code>.</p>
+
+<p>:returns:   The size required to draw the text string, with the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2__VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:maxHeight:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2__VSC6CGSize">sizeString(_:maxWidth:maxHeight:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the line break mode <code>.ByWordWrapping</code>.</p>
+
+<p>:param:     maxHeight The maximum height allowed for the text.</p>
+
+<p>:returns:   The size required to draw the text string, with the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize_S1_"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize_S1_">sizeString(_:maxSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxSize The maximum size allowed for the text. If <code>str</code> would
+            not fit within <code>maxSize.width</code> on a single line, it will be
+            wrapped according to the line break mode <code>.ByWordWrapping</code>.</p>
+
+<p>:returns:   The size required to draw the text string, with the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Measuring%20fractional%20pixels%20with%20word%20wrapping"></a>
+                <a name="//apple_ref/swift/Section/Measuring fractional pixels with word wrapping" class="dashAnchor"></a>
+                <a href="#/Measuring%20fractional%20pixels%20with%20word%20wrapping">
+                  <h3 class="section-name">Measuring fractional pixels with word wrapping</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat10fractionalSb_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat10fractionalSb_VSC6CGSize">sizeString(_:maxWidth:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the line break mode <code>.ByWordWrapping</code>.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_10fractionalSb_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:maxHeight:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_10fractionalSb_VSC6CGSize">sizeString(_:maxWidth:maxHeight:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the line break mode <code>.ByWordWrapping</code>.</p>
+
+<p>:param:     maxHeight The maximum height allowed for the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize10fractionalSb_S1_"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxSize:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize10fractionalSb_S1_">sizeString(_:maxSize:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxSize The maximum size allowed for the text. If <code>str</code> would
+            not fit within <code>maxSize.width</code> on a single line, it will be
+            wrapped according to the line break mode <code>.ByWordWrapping</code>.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Measuring%20whole%20pixels%20with%20a%20specific%20line%20break%20mode"></a>
+                <a name="//apple_ref/swift/Section/Measuring whole pixels with a specific line break mode" class="dashAnchor"></a>
+                <a href="#/Measuring%20whole%20pixels%20with%20a%20specific%20line%20break%20mode">
+                  <h3 class="section-name">Measuring whole pixels with a specific line break mode</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat13lineBreakModeOSC15NSLineBreakMode_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:lineBreakMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat13lineBreakModeOSC15NSLineBreakMode_VSC6CGSize">sizeString(_:maxWidth:lineBreakMode:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified line break mode.</p>
+
+<p>:param:     lineBreakMode The line break mode to use for measuring the text.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">lineBreakMode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_13lineBreakModeOSC15NSLineBreakMode_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:maxHeight:lineBreakMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_13lineBreakModeOSC15NSLineBreakMode_VSC6CGSize">sizeString(_:maxWidth:maxHeight:lineBreakMode:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified line break mode.</p>
+
+<p>:param:     maxHeight The maximum height allowed for the text.</p>
+
+<p>:param:     lineBreakMode The line break mode to use for measuring the text.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">lineBreakMode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize13lineBreakModeOSC15NSLineBreakMode_S1_"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxSize:lineBreakMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize13lineBreakModeOSC15NSLineBreakMode_S1_">sizeString(_:maxSize:lineBreakMode:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxSize The maximum size allowed for the text. If <code>str</code> would
+            not fit within <code>maxSize.width</code> on a single line, it will be
+            wrapped according to the specified line break mode.</p>
+
+<p>:param:     lineBreakMode The line break mode to use for measuring the text.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="nv">lineBreakMode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Measuring%20fractional%20pixels%20with%20a%20specific%20line%20break%20mode"></a>
+                <a name="//apple_ref/swift/Section/Measuring fractional pixels with a specific line break mode" class="dashAnchor"></a>
+                <a href="#/Measuring%20fractional%20pixels%20with%20a%20specific%20line%20break%20mode">
+                  <h3 class="section-name">Measuring fractional pixels with a specific line break mode</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat13lineBreakModeOSC15NSLineBreakMode10fractionalSb_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:lineBreakMode:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat13lineBreakModeOSC15NSLineBreakMode10fractionalSb_VSC6CGSize">sizeString(_:maxWidth:lineBreakMode:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified line break mode.</p>
+
+<p>:param:     lineBreakMode The line break mode to use for measuring the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">lineBreakMode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_13lineBreakModeOSC15NSLineBreakMode10fractionalSb_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:maxHeight:lineBreakMode:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_13lineBreakModeOSC15NSLineBreakMode10fractionalSb_VSC6CGSize">sizeString(_:maxWidth:maxHeight:lineBreakMode:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified line break mode.</p>
+
+<p>:param:     maxHeight The maximum height allowed for the text.</p>
+
+<p>:param:     lineBreakMode The line break mode to use for measuring the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">lineBreakMode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize13lineBreakModeOSC15NSLineBreakMode10fractionalSb_S1_"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxSize:lineBreakMode:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize13lineBreakModeOSC15NSLineBreakMode10fractionalSb_S1_">sizeString(_:maxSize:lineBreakMode:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxSize The maximum size allowed for the text. If <code>str</code> would
+            not fit within <code>maxSize.width</code> on a single line, it will be
+            wrapped according to the specified line break mode.</p>
+
+<p>:param:     lineBreakMode The line break mode to use for measuring the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="nv">lineBreakMode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Measuring%20whole%20pixels%20with%20a%20specific%20paragraph%20style"></a>
+                <a name="//apple_ref/swift/Section/Measuring whole pixels with a specific paragraph style" class="dashAnchor"></a>
+                <a href="#/Measuring%20whole%20pixels%20with%20a%20specific%20paragraph%20style">
+                  <h3 class="section-name">Measuring whole pixels with a specific paragraph style</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat14paragraphStyleCSo16NSParagraphStyle_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:paragraphStyle:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat14paragraphStyleCSo16NSParagraphStyle_VSC6CGSize">sizeString(_:maxWidth:paragraphStyle:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified paragraph style.</p>
+
+<p>:param:     paragraphStyle The paragraph style for the text.</p>
+
+<p>:returns:   The size required to draw the text string, with the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_14paragraphStyleCSo16NSParagraphStyle_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:maxHeight:paragraphStyle:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_14paragraphStyleCSo16NSParagraphStyle_VSC6CGSize">sizeString(_:maxWidth:maxHeight:paragraphStyle:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified paragraph style.</p>
+
+<p>:param:     maxHeight The maximum height allowed for the text.</p>
+
+<p>:param:     paragraphStyle The paragraph style for the text.</p>
+
+<p>:returns:   The size required to draw the text string, with the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize14paragraphStyleCSo16NSParagraphStyle_S1_"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxSize:paragraphStyle:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize14paragraphStyleCSo16NSParagraphStyle_S1_">sizeString(_:maxSize:paragraphStyle:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given
+text string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxSize The maximum size allowed for the text. If <code>str</code> would
+            not fit within <code>maxSize.width</code> on a single line, it will be
+            wrapped according to the specified paragraph style.</p>
+
+<p>:param:     paragraphStyle The paragraph style for the text.</p>
+
+<p>:returns:   The size required to draw the text string, with the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Measuring%20fractional%20pixels%20with%20a%20specific%20paragraph%20style"></a>
+                <a name="//apple_ref/swift/Section/Measuring fractional pixels with a specific paragraph style" class="dashAnchor"></a>
+                <a href="#/Measuring%20fractional%20pixels%20with%20a%20specific%20paragraph%20style">
+                  <h3 class="section-name">Measuring fractional pixels with a specific paragraph style</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat14paragraphStyleCSo16NSParagraphStyle10fractionalSb_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:paragraphStyle:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat14paragraphStyleCSo16NSParagraphStyle10fractionalSb_VSC6CGSize">sizeString(_:maxWidth:paragraphStyle:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given text
+string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would
+            not fit within <code>maxWidth</code> on a single line, it may be wrapped 
+            according to the specified paragraph style.</p>
+
+<p>:param:     paragraphStyle The paragraph style for the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_14paragraphStyleCSo16NSParagraphStyle10fractionalSb_VSC6CGSize"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxWidth:maxHeight:paragraphStyle:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS8maxWidthV12CoreGraphics7CGFloat9maxHeightS2_14paragraphStyleCSo16NSParagraphStyle10fractionalSb_VSC6CGSize">sizeString(_:maxWidth:maxHeight:paragraphStyle:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given text
+string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxWidth The maximum width allowed for the text. If <code>str</code> would 
+            not fit within <code>maxWidth</code> on a single line, it will be wrapped
+            according to the specified paragraph style.</p>
+
+<p>:param:     maxHeight The maximum height allowed for the text.</p>
+
+<p>:param:     paragraphStyle The paragraph style for the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize14paragraphStyleCSo16NSParagraphStyle10fractionalSb_S1_"></a>
+                    <a name="//apple_ref/swift/Method/sizeString(_:maxSize:paragraphStyle:fractional:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE13CleanroomTextCSo6UIFont10sizeStringFTSS7maxSizeVSC6CGSize14paragraphStyleCSo16NSParagraphStyle10fractionalSb_S1_">sizeString(_:maxSize:paragraphStyle:fractional:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the size of the bounding rectangle required to draw a given text
+string in the font represented by the receiver.</p>
+
+<p>:param:     str The text string to measure.</p>
+
+<p>:param:     maxSize The maximum size allowed for the text. If <code>str</code> would
+            not fit within <code>maxSize.width</code> on a single line, it will be
+            wrapped according to the specified paragraph style.</p>
+
+<p>:param:     paragraphStyle The paragraph style for the text.</p>
+
+<p>:param:     allowFractionalSize If <code>true</code>, the returned size may contain
+            fractional (sub-pixel) values. If <code>false</code>, the width and
+            height components rounded up to the nearest integer
+            (whole-pixel) value.</p>
+
+<p>:returns:   The size required to draw the text string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeString</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">,</span> <span class="n">fractional</span> <span class="nv">allowFractionalSize</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
