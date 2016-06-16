@@ -19,7 +19,7 @@ extension String
      
      - returns: The receiver, repeated `numberOfTimes`.
      */
-    public func replicate(numberOfTimes: Int)
+    public func replicate(_ numberOfTimes: Int)
         -> String
     {
         var str = ""

@@ -23,7 +23,7 @@ public extension String
     public func trim()
         -> String
     {
-        return stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 }
 
@@ -31,7 +31,7 @@ public extension String
 A `NSAttributedString` extension that adds a `trim()` function for removing 
 leading and trailing whitespace.
 */
-public extension NSAttributedString
+public extension AttributedString
 {
     /**
     Returns a version of the receiver with whitespace and newline characters
@@ -40,17 +40,17 @@ public extension NSAttributedString
     :returns:       A trimmed version of the receiver.
     */
     public func trim()
-        -> NSAttributedString
+        -> AttributedString
     {
-        let doNotTrim = NSCharacterSet.whitespaceAndNewlineCharacterSet().invertedSet
+        let doNotTrim = CharacterSet.whitespacesAndNewlines.inverted
 
         let operateOn = string as NSString
-        let startRange = operateOn.rangeOfCharacterFromSet(doNotTrim)
-        let endRange = operateOn.rangeOfCharacterFromSet(doNotTrim, options: .BackwardsSearch)
+        let startRange = operateOn.rangeOfCharacter(from: doNotTrim)
+        let endRange = operateOn.rangeOfCharacter(from: doNotTrim, options: .backwardsSearch)
 
         let start = (startRange.length > 0) ? startRange.location : 0
         let end = (endRange.length > 0) ? NSMaxRange(endRange) : operateOn.length
 
-        return attributedSubstringFromRange(NSMakeRange(start, end - start))
+        return attributedSubstring(from: NSMakeRange(start, end - start))
     }
 }

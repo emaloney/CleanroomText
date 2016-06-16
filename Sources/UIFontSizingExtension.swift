@@ -32,12 +32,12 @@ extension UIFont
                 height components rounded up to the nearest integer
                 (whole-pixel) value.
      */
-    public func sizeString(str: String, maxWidth: CGFloat)
+    public func sizeString(_ str: String, maxWidth: CGFloat)
         -> CGSize
     {
         return sizeString(str,
             maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
-            lineBreakMode: NSLineBreakMode.ByWordWrapping,
+            lineBreakMode: NSLineBreakMode.byWordWrapping,
             fractional: false)
     }
 
@@ -57,12 +57,12 @@ extension UIFont
                 height components rounded up to the nearest integer
                 (whole-pixel) value.
      */
-    public func sizeString(str: String, maxWidth: CGFloat, maxHeight: CGFloat)
+    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat)
         -> CGSize
     {
         return sizeString(str,
             maxSize: CGSize(width: maxWidth, height: maxHeight),
-            lineBreakMode: NSLineBreakMode.ByWordWrapping,
+            lineBreakMode: NSLineBreakMode.byWordWrapping,
             fractional: false)
     }
 
@@ -80,12 +80,12 @@ extension UIFont
                 height components rounded up to the nearest integer
                 (whole-pixel) value.
     */
-    public func sizeString(str: String, maxSize: CGSize)
+    public func sizeString(_ str: String, maxSize: CGSize)
         -> CGSize
     {
         return sizeString(str,
             maxSize: maxSize,
-            lineBreakMode: NSLineBreakMode.ByWordWrapping,
+            lineBreakMode: NSLineBreakMode.byWordWrapping,
             fractional: false)
     }
 
@@ -110,12 +110,12 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxWidth: CGFloat, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
             maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
-            lineBreakMode: NSLineBreakMode.ByWordWrapping,
+            lineBreakMode: NSLineBreakMode.byWordWrapping,
             fractional: allowFractionalSize)
     }
 
@@ -138,12 +138,12 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, maxHeight: CGFloat, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
             maxSize: CGSize(width: maxWidth, height: maxHeight),
-            lineBreakMode: NSLineBreakMode.ByWordWrapping,
+            lineBreakMode: NSLineBreakMode.byWordWrapping,
             fractional: allowFractionalSize)
     }
 
@@ -164,12 +164,12 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxSize: CGSize, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxSize: CGSize, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
             maxSize: maxSize,
-            lineBreakMode: NSLineBreakMode.ByWordWrapping,
+            lineBreakMode: NSLineBreakMode.byWordWrapping,
             fractional: allowFractionalSize)
     }
 
@@ -191,7 +191,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode)
+    public func sizeString(_ str: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode)
         -> CGSize
     {
         return sizeString(str,
@@ -216,7 +216,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, maxHeight: CGFloat, lineBreakMode: NSLineBreakMode)
+    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat, lineBreakMode: NSLineBreakMode)
         -> CGSize
     {
         return sizeString(str,
@@ -239,7 +239,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode)
+    public func sizeString(_ str: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode)
         -> CGSize
     {
         return sizeString(str,
@@ -271,7 +271,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
@@ -301,7 +301,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, maxHeight: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
@@ -329,11 +329,11 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
     {
-        let style = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-        style.lineBreakMode = .ByWordWrapping
+        let style = NSParagraphStyle.default().mutableCopy() as! NSMutableParagraphStyle
+        style.lineBreakMode = .byWordWrapping
 
         return sizeString(str,
             maxSize: maxSize,
@@ -361,7 +361,7 @@ extension UIFont
                 height components rounded up to the nearest integer
                 (whole-pixel) value.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle)
+    public func sizeString(_ str: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle)
         -> CGSize
     {
         return sizeString(str,
@@ -388,7 +388,7 @@ extension UIFont
                 height components rounded up to the nearest integer
                 (whole-pixel) value.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, maxHeight: CGFloat, paragraphStyle: NSParagraphStyle)
+    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat, paragraphStyle: NSParagraphStyle)
         -> CGSize
     {
         return sizeString(str,
@@ -413,7 +413,7 @@ extension UIFont
                 height components rounded up to the nearest integer
                 (whole-pixel) value.
     */
-    public func sizeString(str: String, maxSize: CGSize, paragraphStyle: NSParagraphStyle)
+    public func sizeString(_ str: String, maxSize: CGSize, paragraphStyle: NSParagraphStyle)
         -> CGSize
     {
         return sizeString(str,
@@ -445,7 +445,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
@@ -475,7 +475,7 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxWidth: CGFloat, maxHeight: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeString(str,
@@ -503,11 +503,11 @@ extension UIFont
 
     :returns:   The size required to draw the text string.
     */
-    public func sizeString(str: String, maxSize: CGSize, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
+    public func sizeString(_ str: String, maxSize: CGSize, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
     {
-        let rect = str.boundingRectWithSize(maxSize,
-            options: [.UsesFontLeading, .UsesLineFragmentOrigin, .TruncatesLastVisibleLine],
+        let rect = str.boundingRect(with: maxSize,
+            options: [.usesFontLeading, .usesLineFragmentOrigin, .truncatesLastVisibleLine],
             attributes: [NSFontAttributeName: self, NSParagraphStyleAttributeName: paragraphStyle],
             context: nil)
 
