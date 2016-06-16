@@ -9,41 +9,41 @@
 import Foundation
 
 /**
-A `Pluralizer` instance represents a *term* that can take multiple *forms*
-depending on a *quantity*.
-*/
+ A `Pluralizer` instance represents a *term* that can take multiple *forms*
+ depending on a *quantity*.
+ */
 public struct Pluralizer
 {
     /** Specifies the form of the term to be used when the quantity is one. */
     public let singular: String
 
     /** Specifies the form of the term to be used when the quantity is greater
-    than one. */
+     than one. */
     public let plural: String
 
-    /** Specifies the form of the term to be used when the quantity is zero. 
-    If `nil`, the value of the `plural` property will be used when the quantity
-    is zero. */
+    /** Specifies the form of the term to be used when the quantity is zero.
+     If `nil`, the value of the `plural` property will be used when the quantity
+     is zero. */
     public let none: String?
 
     /**
-    Initializes a `Pluralizer` instance with the forms of the term it will
-    represent.
+     Initializes a `Pluralizer` instance with the forms of the term it will
+     represent.
 
-    Within the strings specified for the various forms, the text "`{#}`" will 
-    be replaced with the quantity passed to the `termWithQuantity()` function.
+     Within the strings specified for the various forms, the text "`{#}`" will
+     be replaced with the quantity passed to the `termWithQuantity()` function.
 
-    :param:     singular Specifies the singular form of the term, which is used
-                when the applied quantity is one.
+     - parameter singular: Specifies the singular form of the term, which is
+     used when the applied quantity is one.
 
-    :param:     plural Specifies the plural form of the term, which is used when
-                the applied quantity is greater than one.
+     - parameter plural: Specifies the plural form of the term, which is used
+     when the applied quantity is greater than one.
 
-    :param:     none Specifies the form of the term to be used when the
-                applied quantity is zero. This parameter is optional; if 
-                this value is not specified or is `nil`, the `plural` form
-                will be used when the quantity is zero.
-    */
+     - parameter none: Specifies the form of the term to be used when the 
+     applied quantity is zero. This parameter is optional; if this value is not
+     specified or is `nil`, the `plural` form will be used when the quantity is
+     zero.
+     */
     public init(singular: String, plural: String, none: String? = nil)
     {
         self.plural = plural
@@ -52,13 +52,13 @@ public struct Pluralizer
     }
 
     /**
-    Initializes a `Pluralizer` that uses the same form for every quantity.
-    
-    Within the specified string, the text "`{#}`" will be replaced with the
-    quantity passed to the `termWithQuantity()` function.
+     Initializes a `Pluralizer` that uses the same form for every quantity.
 
-    :param:     allForms Specifies the value to use for all forms.
-    */
+     Within the specified string, the text "`{#}`" will be replaced with the
+     quantity passed to the `termWithQuantity()` function.
+
+     - parameter allForms: Specifies the value to use for all forms.
+     */
     public init(allForms: String)
     {
         self.none = allForms
@@ -67,13 +67,13 @@ public struct Pluralizer
     }
 
     /**
-    Given a quantity, this function returns the correct form of the term
-    represented by the receiver.
+     Given a quantity, this function returns the correct form of the term
+     represented by the receiver.
 
-    :param:     quantity The quantity to apply.
-    
-    :returns:   The pluralized form approrpriate for `quantity`.
-    */
+     - parameter quantity: The quantity to apply.
+
+     - returns: The pluralized form approrpriate for `quantity`.
+     */
     public func termForQuantity(_ quantity: Int)
         -> String
     {

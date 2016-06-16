@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 /**
-A `UIFont` extension that adds string sizing capabilities.
-*/
+ A `UIFont` extension that adds string sizing capabilities.
+ */
 extension UIFont
 {
     //==========================================================================
@@ -19,18 +19,17 @@ extension UIFont
     //--------------------------------------------------------------------------
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the line break mode `.ByWordWrapping`.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be
+     wrapped according to the behavior of `NSLineBreakMode.byWordWrapping`.
 
-    :returns:   The size required to draw the text string, with the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - returns: The size required to draw the text string, with the width and
+     height components rounded up to the nearest integer (whole-pixel) value.
      */
     public func sizeOf(string: String, maxWidth: CGFloat)
         -> CGSize
@@ -42,22 +41,21 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the line break mode `.ByWordWrapping`.
+     - parameter string: The text string to measure.
 
-    :param:     maxHeight The maximum height allowed for the text.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be
+     wrapped according to the behavior of `NSLineBreakMode.byWordWrapping`.
 
-    :returns:   The size required to draw the text string, with the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter maxHeight: The maximum height allowed for the text.
+
+     - returns: The size required to draw the text string, with the width and
+     height components rounded up to the nearest integer (whole-pixel) value.
      */
-    public func sizeString(_ str: String, maxWidth: CGFloat, maxHeight: CGFloat)
+    public func sizeOf(string: String, maxWidth: CGFloat, maxHeight: CGFloat)
         -> CGSize
     {
         return sizeOf(string: string,
@@ -67,18 +65,17 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxSize The maximum size allowed for the text. If `str` would
-                not fit within `maxSize.width` on a single line, it will be
-                wrapped according to the line break mode `.ByWordWrapping`.
+     - parameter maxSize: The maximum size allowed for the text. If `string`
+     would not fit within `maxSize.width` on a single line, it will be wrapped
+     according to the behavior of `NSLineBreakMode.byWordWrapping`.
 
-    :returns:   The size required to draw the text string, with the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - returns: The size required to draw the text string, with the width and
+     height components rounded up to the nearest integer (whole-pixel) value.
     */
     public func sizeOf(string: String, maxSize: CGSize)
         -> CGSize
@@ -94,21 +91,20 @@ extension UIFont
     //--------------------------------------------------------------------------
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the line break mode `.ByWordWrapping`.
+     - parameter string: The text string to measure.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be
+     wrapped according to the behavior of `NSLineBreakMode.byWordWrapping`.
 
-    :returns:   The size required to draw the text string.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -120,23 +116,22 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the line break mode `.ByWordWrapping`.
+     - parameter string: The text string to measure.
 
-    :param:     maxHeight The maximum height allowed for the text.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be
+     wrapped according to the behavior of `NSLineBreakMode.byWordWrapping`.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter maxHeight: The maximum height allowed for the text.
 
-    :returns:   The size required to draw the text string.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, maxHeight: CGFloat, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -148,21 +143,20 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxSize The maximum size allowed for the text. If `str` would
-                not fit within `maxSize.width` on a single line, it will be
-                wrapped according to the line break mode `.ByWordWrapping`.
+     - parameter string: The text string to measure.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter maxSize: The maximum size allowed for the text. If `string` 
+     would not fit within `maxSize.width` on a single line, it will be wrapped
+     according to the behavior of `NSLineBreakMode.byWordWrapping`.
 
-    :returns:   The size required to draw the text string.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxSize: CGSize, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -178,18 +172,18 @@ extension UIFont
     //--------------------------------------------------------------------------
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified line break mode.
+     - parameter string: The text string to measure.
 
-    :param:     lineBreakMode The line break mode to use for measuring the text.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped 
+     according to the behavior of the specified line break mode.
 
-    :returns:   The size required to draw the text string.
+     - parameter lineBreakMode: The line break mode to use for measuring.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode)
         -> CGSize
@@ -201,20 +195,20 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified line break mode.
+     - parameter string: The text string to measure.
 
-    :param:     maxHeight The maximum height allowed for the text.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the behavior of the specified line break mode.
+
+     - parameter maxHeight: The maximum height allowed for the text.
     
-    :param:     lineBreakMode The line break mode to use for measuring the text.
+     - parameter lineBreakMode: The line break mode to use for measuring.
 
-    :returns:   The size required to draw the text string.
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, maxHeight: CGFloat, lineBreakMode: NSLineBreakMode)
         -> CGSize
@@ -226,18 +220,18 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxSize The maximum size allowed for the text. If `str` would
-                not fit within `maxSize.width` on a single line, it will be
-                wrapped according to the specified line break mode.
+     - parameter string: The text string to measure.
 
-    :param:     lineBreakMode The line break mode to use for measuring the text.
+     - parameter maxSize: The maximum size allowed for the text. If `string` 
+     would not fit within `maxSize.width` on a single line, it will be wrapped
+     according to the behavior of the specified line break mode.
 
-    :returns:   The size required to draw the text string.
+     - parameter lineBreakMode: The line break mode to use for measuring.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode)
         -> CGSize
@@ -253,23 +247,22 @@ extension UIFont
     //--------------------------------------------------------------------------
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified line break mode.
+     - parameter string: The text string to measure.
 
-    :param:     lineBreakMode The line break mode to use for measuring the text.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the behavior of the specified line break mode.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter lineBreakMode: The line break mode to use for measuring.
 
-    :returns:   The size required to draw the text string.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -281,25 +274,24 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified line break mode.
+     - parameter string: The text string to measure.
 
-    :param:     maxHeight The maximum height allowed for the text.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the behavior of the specified line break mode.
 
-    :param:     lineBreakMode The line break mode to use for measuring the text.
+     - parameter maxHeight: The maximum height allowed for the text.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter lineBreakMode: The line break mode to use for measuring.
 
-    :returns:   The size required to draw the text string.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, maxHeight: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -311,23 +303,22 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
-     
-    :param:     str The text string to measure.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     maxSize The maximum size allowed for the text. If `str` would
-                not fit within `maxSize.width` on a single line, it will be
-                wrapped according to the specified line break mode.
+     - parameter string: The text string to measure.
 
-    :param:     lineBreakMode The line break mode to use for measuring the text.
+     - parameter maxSize: The maximum size allowed for the text. If `string`
+     would not fit within `maxSize.width` on a single line, it will be wrapped
+     according to the behavior of the specified line break mode.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter lineBreakMode: The line break mode to use for measuring.
 
-    :returns:   The size required to draw the text string.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
+
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -346,20 +337,19 @@ extension UIFont
     //--------------------------------------------------------------------------
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified paragraph style.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the specified paragraph style.
 
-    :param:     paragraphStyle The paragraph style for the text.
+     - parameter paragraphStyle: The paragraph style for the text.
 
-    :returns:   The size required to draw the text string, with the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - returns: The size required to draw the text string, with the width and
+     height components rounded up to the nearest integer (whole-pixel) value.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle)
         -> CGSize
@@ -371,22 +361,21 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified paragraph style.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the specified paragraph style.
 
-    :param:     maxHeight The maximum height allowed for the text.
+     - parameter maxHeight: The maximum height allowed for the text.
     
-    :param:     paragraphStyle The paragraph style for the text.
+     - parameter paragraphStyle: The paragraph style for the text.
 
-    :returns:   The size required to draw the text string, with the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - returns: The size required to draw the text string, with the width and
+     height components rounded up to the nearest integer (whole-pixel) value.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, maxHeight: CGFloat, paragraphStyle: NSParagraphStyle)
         -> CGSize
@@ -398,20 +387,19 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given
-    text string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given
+     text string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxSize The maximum size allowed for the text. If `str` would
-                not fit within `maxSize.width` on a single line, it will be
-                wrapped according to the specified paragraph style.
+     - parameter maxSize: The maximum size allowed for the text. If `string`
+     would not fit within `maxSize.width` on a single line, it will be wrapped
+     according to the specified paragraph style.
 
-    :param:     paragraphStyle The paragraph style for the text.
+     - parameter paragraphStyle: The paragraph style for the text.
 
-    :returns:   The size required to draw the text string, with the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - returns: The size required to draw the text string, with the width and
+     height components rounded up to the nearest integer (whole-pixel) value.
     */
     public func sizeOf(string: String, maxSize: CGSize, paragraphStyle: NSParagraphStyle)
         -> CGSize
@@ -427,23 +415,22 @@ extension UIFont
     //--------------------------------------------------------------------------
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given text
-    string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given text
+     string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would
-                not fit within `maxWidth` on a single line, it may be wrapped 
-                according to the specified paragraph style.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the specified paragraph style.
 
-    :param:     paragraphStyle The paragraph style for the text.
+     - parameter paragraphStyle: The paragraph style for the text.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
 
-    :returns:   The size required to draw the text string.
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -455,25 +442,24 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given text
-    string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given text
+     string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxWidth The maximum width allowed for the text. If `str` would 
-                not fit within `maxWidth` on a single line, it will be wrapped
-                according to the specified paragraph style.
+     - parameter maxWidth: The maximum width allowed for the text. If `string`
+     would not fit within `maxWidth` on a single line, it will be wrapped
+     according to the specified paragraph style.
 
-    :param:     maxHeight The maximum height allowed for the text.
+     - parameter maxHeight: The maximum height allowed for the text.
 
-    :param:     paragraphStyle The paragraph style for the text.
+     - parameter paragraphStyle: The paragraph style for the text.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
 
-    :returns:   The size required to draw the text string.
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxWidth: CGFloat, maxHeight: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
@@ -485,23 +471,22 @@ extension UIFont
     }
 
     /**
-    Calculates the size of the bounding rectangle required to draw a given text
-    string in the font represented by the receiver.
+     Calculates the size of the bounding rectangle required to draw a given text
+     string in the font represented by the receiver.
 
-    :param:     str The text string to measure.
+     - parameter string: The text string to measure.
 
-    :param:     maxSize The maximum size allowed for the text. If `str` would
-                not fit within `maxSize.width` on a single line, it will be
-                wrapped according to the specified paragraph style.
+     - parameter maxSize: The maximum size allowed for the text. If `string`
+     would not fit within `maxSize.width` on a single line, it will be wrapped
+     according to the specified paragraph style.
 
-    :param:     paragraphStyle The paragraph style for the text.
+     - parameter paragraphStyle: The paragraph style for the text.
 
-    :param:     allowFractionalSize If `true`, the returned size may contain
-                fractional (sub-pixel) values. If `false`, the width and
-                height components rounded up to the nearest integer
-                (whole-pixel) value.
+     - parameter allowFractionalSize: If `true`, the returned size may contain
+     fractional (sub-pixel) values. If `false`, the width and height components
+     rounded up to the nearest integer (whole-pixel) value.
 
-    :returns:   The size required to draw the text string.
+     - returns: The size required to draw the text string.
     */
     public func sizeOf(string: String, maxSize: CGSize, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
