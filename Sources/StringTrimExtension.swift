@@ -46,7 +46,7 @@ public extension AttributedString
 
         let operateOn = string as NSString
         let startRange = operateOn.rangeOfCharacter(from: doNotTrim)
-        let endRange = operateOn.rangeOfCharacter(from: doNotTrim, options: .backwardsSearch)
+        let endRange = operateOn.rangeOfCharacter(from: doNotTrim, options: .backwards)
 
         let start = (startRange.length > 0) ? startRange.location : 0
         let end = (endRange.length > 0) ? NSMaxRange(endRange) : operateOn.length
