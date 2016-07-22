@@ -21,9 +21,9 @@ The [`master`](https://github.com/emaloney/CleanroomText) branch of this project
 
 Branch|Build status
 --------|------------------------
-`master`|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomText)
-`swift2.3`|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomText)
-`swift3`|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomText)
+[`master`](https://github.com/emaloney/CleanroomText)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomText)
+[`swift2.3`](https://github.com/emaloney/CleanroomText/tree/swift2.3)|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomText)
+[`swift3`](https://github.com/emaloney/CleanroomText/tree/swift3)|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomText)
 
 
 ### License
