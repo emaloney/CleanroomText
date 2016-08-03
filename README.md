@@ -7,10 +7,24 @@ CleanroomText is a Swift framework providing tools for working with strings and 
 CleanroomText is part of [the Cleanroom Project](https://github.com/gilt/Cleanroom) from [Gilt Tech](http://tech.gilt.com).
 
 
+### Swift compatibility
 
-### Swift 2.2 compatibility
+**Important:** This is the `swift3` branch. It is **Swift 3.0 compliant** and therefore **requires Xcode 8.0** to compile.
 
-The `master` branch of this project is **Swift 2.2 compliant** and therefore **requires Xcode 7.3 or higher** to compile.
+2 other branches are also available:
+
+ - The [`master`](https://github.com/emaloney/CleanroomText) branch uses **Swift 2.2**, requiring Xcode 7.3
+ - The [`swift2.3`](https://github.com/emaloney/CleanroomText/tree/swift2.3) branch uses **Swift 2.3**, requiring Xcode 8.0
+
+
+#### Current status
+
+Branch|Build status
+--------|------------------------
+[`master`](https://github.com/emaloney/CleanroomText)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomText)
+[`swift2.3`](https://github.com/emaloney/CleanroomText/tree/swift2.3)|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomText)
+[`swift3`](https://github.com/emaloney/CleanroomText/tree/swift3)|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomText)
+
 
 ### License
 
