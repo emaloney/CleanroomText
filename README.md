@@ -28,7 +28,7 @@ Branch|Build status
 
 ### License
 
-CleanroomText is distributed under [the MIT license](/blob/master/LICENSE).
+CleanroomText is distributed under [the MIT license](https://github.com/emaloney/CleanroomText/blob/master/LICENSE).
 
 CleanroomText is provided for your use—free-of-charge—on an as-is basis. We make no guarantees, promises or apologies. *Caveat developer.*
 
