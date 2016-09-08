@@ -323,7 +323,7 @@ extension UIFont
     public func sizeOf(string: String, maxSize: CGSize, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
     {
-        let style = NSParagraphStyle.default().mutableCopy() as! NSMutableParagraphStyle
+        let style = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
         style.lineBreakMode = .byWordWrapping
 
         return sizeOf(string: string,

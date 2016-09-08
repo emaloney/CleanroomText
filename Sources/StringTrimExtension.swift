@@ -31,7 +31,7 @@ public extension String
  A `NSAttributedString` extension that adds a `trim()` function for removing
  leading and trailing whitespace.
  */
-public extension AttributedString
+public extension NSAttributedString
 {
     /**
      Returns a version of the receiver with whitespace and newline characters
@@ -40,7 +40,7 @@ public extension AttributedString
      - returns: A trimmed version of the receiver.
      */
     public func trim()
-        -> AttributedString
+        -> NSAttributedString
     {
         let doNotTrim = CharacterSet.whitespacesAndNewlines.inverted
 
