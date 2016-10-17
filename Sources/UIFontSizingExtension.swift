@@ -6,6 +6,8 @@
 //  Copyright © 2015 Gilt Groupe. All rights reserved.
 //
 
+#if !os(macOS)
+
 import Foundation
 import UIKit
 
@@ -505,3 +507,5 @@ extension UIFont
         return size
     }
 }
+
+#endif

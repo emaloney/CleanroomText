@@ -110,7 +110,7 @@ depending on a <em>quantity</em>.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Specifies the form of the term to be used when the quantity is greater
-than one.</p>
+ than one.</p>
 
                       </div>
                       <div class="declaration">
@@ -137,9 +137,9 @@ than one.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the form of the term to be used when the quantity is zero. 
-If <code>nil</code>, the value of the <code><a href="../Structs/Pluralizer.html#/s:vV13CleanroomText10Pluralizer6pluralSS">plural</a></code> property will be used when the quantity
-is zero.</p>
+                        <p>Specifies the form of the term to be used when the quantity is zero.
+ If <code>nil</code>, the value of the <code><a href="../Structs/Pluralizer.html#/s:vV13CleanroomText10Pluralizer6pluralSS">plural</a></code> property will be used when the quantity
+ is zero.</p>
 
                       </div>
                       <div class="declaration">
@@ -166,22 +166,11 @@ is zero.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initializes a <code><a href="../Structs/Pluralizer.html">Pluralizer</a></code> instance with the forms of the term it will
+                        <p>Initializes a <code>Pluralizer</code> instance with the forms of the term it will
 represent.</p>
 
-<p>Within the strings specified for the various forms, the text <q>`{#}`</q> will 
+<p>Within the strings specified for the various forms, the text <q>`{#}`</q> will
 be replaced with the quantity passed to the <code>termWithQuantity()</code> function.</p>
-
-<p>:param:     singular Specifies the singular form of the term, which is used
-            when the applied quantity is one.</p>
-
-<p>:param:     plural Specifies the plural form of the term, which is used when
-            the applied quantity is greater than one.</p>
-
-<p>:param:     none Specifies the form of the term to be used when the
-            applied quantity is zero. This parameter is optional; if 
-            this value is not specified or is <code>nil</code>, the <code><a href="../Structs/Pluralizer.html#/s:vV13CleanroomText10Pluralizer6pluralSS">plural</a></code> form
-            will be used when the quantity is zero.</p>
 
                       </div>
                       <div class="declaration">
@@ -191,6 +180,52 @@ be replaced with the quantity passed to the <code>termWithQuantity()</code> func
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">none</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>singular</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies the singular form of the term, which is used when the applied quantity is one.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>plural</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies the plural form of the term, which is used when the applied quantity is greater than one.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>none</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies the form of the term to be used when the applied quantity is zero. This parameter is optional; if this value is not specified or is <code>nil</code>, the <code>plural</code> form will be used when the quantity is zero.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -208,12 +243,10 @@ be replaced with the quantity passed to the <code>termWithQuantity()</code> func
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initializes a <code><a href="../Structs/Pluralizer.html">Pluralizer</a></code> that uses the same form for every quantity.</p>
+                        <p>Initializes a <code>Pluralizer</code> that uses the same form for every quantity.</p>
 
 <p>Within the specified string, the text <q>`{#}`</q> will be replaced with the
 quantity passed to the <code>termWithQuantity()</code> function.</p>
-
-<p>:param:     allForms Specifies the value to use for all forms.</p>
 
                       </div>
                       <div class="declaration">
@@ -223,6 +256,26 @@ quantity passed to the <code>termWithQuantity()</code> function.</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">allForms</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>allForms</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies the value to use for all forms.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -243,19 +296,40 @@ quantity passed to the <code>termWithQuantity()</code> function.</p>
                         <p>Given a quantity, this function returns the correct form of the term
 represented by the receiver.</p>
 
-<p>:param:     quantity The quantity to apply.</p>
-
-<p>:returns:   The pluralized form approrpriate for <code>quantity</code>.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">termForQuantity</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">termForQuantity</span><span class="p">(</span><span class="n">_</span> <span class="nv">quantity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span>
         <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quantity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The quantity to apply.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The pluralized form approrpriate for <code>quantity</code>.</p>
+
                       </div>
                     </section>
                   </div>
@@ -266,7 +340,7 @@ represented by the receiver.</p>
         </section>
         <section id="footer">
           <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
