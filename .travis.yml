@@ -15,8 +15,8 @@ install:
 script:
   - ./BuildControl/bin/travisBuildHelper.sh build iOS
   - ./BuildControl/bin/travisBuildHelper.sh test iOS
-  - ./BuildControl/bin/travisBuildHelper.sh build macOS
-  - ./BuildControl/bin/travisBuildHelper.sh test macOS
+  - ./BuildControl/bin/travisBuildHelper.sh build OSX
+  - ./BuildControl/bin/travisBuildHelper.sh test OSX
   - ./BuildControl/bin/travisBuildHelper.sh build tvOS
   - ./BuildControl/bin/travisBuildHelper.sh test tvOS
   - ./BuildControl/bin/travisBuildHelper.sh build watchOS
@@ -25,9 +25,9 @@ after_failure:
   - test -f "CleanroomText-iOS-build.log" && tail -n 2500 "CleanroomText-iOS-build.log"
   - test -f "CleanroomText-iOS-test.log" && tail -n 2500 "CleanroomText-iOS-test.log"
   - test -f "CleanroomText-iOS-test.log" && LINE_BEFORE=`cat "CleanroomText-iOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-iOS-test.log" | tail -n 1` && cat "$LOG_FILE"
-  - test -f "CleanroomText-macOS-build.log" && tail -n 2500 "CleanroomText-macOS-build.log"
-  - test -f "CleanroomText-macOS-test.log" && tail -n 2500 "CleanroomText-macOS-test.log"
-  - test -f "CleanroomText-macOS-test.log" && LINE_BEFORE=`cat "CleanroomText-macOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-macOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+  - test -f "CleanroomText-OSX-build.log" && tail -n 2500 "CleanroomText-OSX-build.log"
+  - test -f "CleanroomText-OSX-test.log" && tail -n 2500 "CleanroomText-OSX-test.log"
+  - test -f "CleanroomText-OSX-test.log" && LINE_BEFORE=`cat "CleanroomText-OSX-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-OSX-test.log" | tail -n 1` && cat "$LOG_FILE"
   - test -f "CleanroomText-tvOS-build.log" && tail -n 2500 "CleanroomText-tvOS-build.log"
   - test -f "CleanroomText-tvOS-test.log" && tail -n 2500 "CleanroomText-tvOS-test.log"
   - test -f "CleanroomText-tvOS-test.log" && LINE_BEFORE=`cat "CleanroomText-tvOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-tvOS-test.log" | tail -n 1` && cat "$LOG_FILE"
