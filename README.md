@@ -43,7 +43,7 @@ Then, use the `carthage` command to [update your dependencies](https://github.co
 
 Finally, you’ll need to [integrate CleanroomText into your project](https://github.com/emaloney/CleanroomText/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomText/master/Documentation/API/index.html) it provides.
 
-Once successfully integrated, just add the following `import` statement to any Swift file where you want to use CleanroomText:
+Once successfully integrated, just add the following statement to any Swift file where you want to use CleanroomText:
 
 ```swift
 import CleanroomText
@@ -108,7 +108,6 @@ let threeGeese = gooser.termForQuantity(3)    // threeGeese will be "3 geese"
 ```
 
 
-
 ### API documentation
 
 For detailed information on using CleanroomText, [API documentation](https://rawgit.com/emaloney/CleanroomText/master/Documentation/API/index.html) is available.
@@ -134,5 +133,4 @@ If you’d like to contribute to this or any other Cleanroom Project repo, pleas
 
 ### Acknowledgements
 
-[API documentation for CleanroomText](https://rawgit.com/emaloney/CleanroomText/master/Documentation/API/index.html) is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
-
+API documentation is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
