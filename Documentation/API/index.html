@@ -64,24 +64,24 @@
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gooser</span> <span class="o">=</span> <span class="kt">Pluralizer</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="s">"goose"</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="s">"geese"</span><span class="p">)</span>
 </code></pre>
 
-<p>By calling the <code>termForQuantity()</code> function, <code>gooser</code> can then be used to select the appropriate form of the term for a given quantity:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "goose"</span>
-<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "geese"</span>
+<p>By calling the <code>term(quantity: )</code> function, <code>gooser</code> can then be used to select the appropriate form of the term for a given quantity:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "goose"</span>
+<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "geese"</span>
 </code></pre>
 <a href='#quantity-replacement' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='quantity-replacement'>Quantity Replacement</h4>
 
-<p>You can also refer to the value passed to the <code>termForQuantity()</code> function from within the terms passed to <code>Pluralizer</code>&lsquo;s constructor:</p>
+<p>You can also refer to the value passed to the <code>term(quantity: )</code> function from within the terms passed to <code>Pluralizer</code>&lsquo;s constructor:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">gooser</span> <span class="o">=</span> <span class="kt">Pluralizer</span><span class="p">(</span><span class="nv">singular</span><span class="p">:</span> <span class="s">"one goose"</span><span class="p">,</span> <span class="nv">plural</span><span class="p">:</span> <span class="s">"{#} geese"</span><span class="p">)</span>
 </code></pre>
 
 <p>With this type of <code>gooser</code>, the return values would be different:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "one goose"</span>
-<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "3 geese"</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "one goose"</span>
+<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "3 geese"</span>
 </code></pre>
 <a href='#zero-quantities' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='zero-quantities'>Zero Quantities</h4>
 
 <p>Normally, when specifying a quantity of zero, the <code>Pluralizer</code> uses the plural form of the term:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">noGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>       <span class="c1">// noGeese will be "0 geese"</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">noGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>       <span class="c1">// noGeese will be "0 geese"</span>
 </code></pre>
 
 <p>If needed, the zero-quantity form of the term can also be explicitly specified to the initializer:</p>
@@ -89,16 +89,16 @@
 </code></pre>
 
 <p>With this type of <code>gooser</code>, the return values would be different:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">noGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>       <span class="c1">// noGeese will be "no geese"</span>
-<span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "one goose"</span>
-<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">termForQuantity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "3 geese"</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">noGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>       <span class="c1">// noGeese will be "no geese"</span>
+<span class="k">let</span> <span class="nv">oneGoose</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>      <span class="c1">// oneGoose will be "one goose"</span>
+<span class="k">let</span> <span class="nv">threeGeese</span> <span class="o">=</span> <span class="n">gooser</span><span class="o">.</span><span class="nf">term</span><span class="p">(</span><span class="nv">quantity</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>    <span class="c1">// threeGeese will be "3 geese"</span>
 </code></pre>
 
           </section>
         </section>
         <section id="footer">
           <p>© 2015-2017 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
