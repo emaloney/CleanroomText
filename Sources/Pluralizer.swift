@@ -74,7 +74,7 @@ public struct Pluralizer
 
      - returns: The pluralized form approrpriate for `quantity`.
      */
-    public func termForQuantity(_ quantity: Int)
+    public func term(quantity: Int)
         -> String
     {
         var selectedForm: String!
