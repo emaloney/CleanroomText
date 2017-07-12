@@ -47,9 +47,9 @@ To integrate CleanroomText in your workspace, you would start by adding the foll
 github "emaloney/CleanroomText" ~> 1.4.0
 ```
 
-This specifies that Carthage use the latest version of CleanroomText that is API-compatible with 1.4, i.e. any 1.4.*x* version.
+This specifies that Carthage use the latest version of CleanroomText that is API-compatible with 1.4.0, i.e. any 1.4.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomText/releases); there may be a newer version than 1.4 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomText/releases); there may be a newer version than 1.4.0 that is no longer API-compatible.
 
 ### 2. Download CleanroomText using Carthage
 
