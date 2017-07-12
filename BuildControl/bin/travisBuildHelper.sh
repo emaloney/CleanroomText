@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -o pipefail
+set -x
 
 if [[ $# != 2 ]]; then
 	echo "error: Expecting 2 arguments; <operation> <platform>"
@@ -62,6 +63,7 @@ while [[ $THIS_TRY < $MAXIMUM_TRIES ]]; do
 		exit 0
 	elif [[ "$XCODE_RESULT" != "65" ]]; then
 		echo "Failed with exit code $XCODE_RESULT."
+		cat "CleanroomText-$PLATFORM-$OPERATION.log"
 		exit $XCODE_RESULT
 	elif [[ $MAXIMUM_TRIES > 1 && $THIS_TRY < $MAXIMUM_TRIES ]]; then
 		echo "Failed with exit code 65. This may be a transient error; trying again."
