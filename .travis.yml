@@ -12,26 +12,27 @@ before_install:
 
 install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-  - rm -rf ~/Library/Developer/CoreSimulator					  	# these two lines are a hack around a recurring Travis problem: multiple versions of the
-  - sudo killall -9 com.apple.CoreSimulator.CoreSimulatorService	# same simulator: https://github.com/travis-ci/travis-ci/issues/7580#issuecomment-292974395
+#  - rm -rf ~/Library/Developer/CoreSimulator					  	# these two lines are a hack around a recurring Travis problem: multiple versions of the
+#  - sudo killall -9 com.apple.CoreSimulator.CoreSimulatorService	# same simulator: https://github.com/travis-ci/travis-ci/issues/7580#issuecomment-292974395
 
 script:
-  - ./BuildControl/bin/travisBuildHelper.sh build iOS
-  - ./BuildControl/bin/travisBuildHelper.sh test iOS
-  - ./BuildControl/bin/travisBuildHelper.sh build macOS
-  - ./BuildControl/bin/travisBuildHelper.sh test macOS
-  - ./BuildControl/bin/travisBuildHelper.sh build tvOS
-  - ./BuildControl/bin/travisBuildHelper.sh test tvOS
-  - ./BuildControl/bin/travisBuildHelper.sh build watchOS
+  - xcodebuild -project CleanroomText.xcodeproj -configuration Debug -scheme CleanroomText -destination 'platform=iOS Simulator,OS=10.3,name=iPad Air 2' -destination-timeout 300 clean build
+#  - ./BuildControl/bin/travisBuildHelper.sh build iOS
+#  - ./BuildControl/bin/travisBuildHelper.sh test iOS
+#  - ./BuildControl/bin/travisBuildHelper.sh build macOS
+#  - ./BuildControl/bin/travisBuildHelper.sh test macOS
+#  - ./BuildControl/bin/travisBuildHelper.sh build tvOS
+#  - ./BuildControl/bin/travisBuildHelper.sh test tvOS
+#  - ./BuildControl/bin/travisBuildHelper.sh build watchOS
 
-after_failure:
-  - test -f "CleanroomText-iOS-build.log" && tail -n 2500 "CleanroomText-iOS-build.log"
-  - test -f "CleanroomText-iOS-test.log" && tail -n 2500 "CleanroomText-iOS-test.log"
-  - test -f "CleanroomText-iOS-test.log" && LINE_BEFORE=`cat "CleanroomText-iOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-iOS-test.log" | tail -n 1` && cat "$LOG_FILE"
-  - test -f "CleanroomText-macOS-build.log" && tail -n 2500 "CleanroomText-macOS-build.log"
-  - test -f "CleanroomText-macOS-test.log" && tail -n 2500 "CleanroomText-macOS-test.log"
-  - test -f "CleanroomText-macOS-test.log" && LINE_BEFORE=`cat "CleanroomText-macOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-macOS-test.log" | tail -n 1` && cat "$LOG_FILE"
-  - test -f "CleanroomText-tvOS-build.log" && tail -n 2500 "CleanroomText-tvOS-build.log"
-  - test -f "CleanroomText-tvOS-test.log" && tail -n 2500 "CleanroomText-tvOS-test.log"
-  - test -f "CleanroomText-tvOS-test.log" && LINE_BEFORE=`cat "CleanroomText-tvOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-tvOS-test.log" | tail -n 1` && cat "$LOG_FILE"
-  - test -f "CleanroomText-watchOS-build.log" && tail -n 2500 "CleanroomText-watchOS-build.log"
+#after_failure:
+#  - test -f "CleanroomText-iOS-build.log" && tail -n 2500 "CleanroomText-iOS-build.log"
+#  - test -f "CleanroomText-iOS-test.log" && tail -n 2500 "CleanroomText-iOS-test.log"
+#  - test -f "CleanroomText-iOS-test.log" && LINE_BEFORE=`cat "CleanroomText-iOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-iOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+#  - test -f "CleanroomText-macOS-build.log" && tail -n 2500 "CleanroomText-macOS-build.log"
+#  - test -f "CleanroomText-macOS-test.log" && tail -n 2500 "CleanroomText-macOS-test.log"
+#  - test -f "CleanroomText-macOS-test.log" && LINE_BEFORE=`cat "CleanroomText-macOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-macOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+#  - test -f "CleanroomText-tvOS-build.log" && tail -n 2500 "CleanroomText-tvOS-build.log"
+#  - test -f "CleanroomText-tvOS-test.log" && tail -n 2500 "CleanroomText-tvOS-test.log"
+#  - test -f "CleanroomText-tvOS-test.log" && LINE_BEFORE=`cat "CleanroomText-tvOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomText-tvOS-test.log" | tail -n 1` && cat "$LOG_FILE"
+#  - test -f "CleanroomText-watchOS-build.log" && tail -n 2500 "CleanroomText-watchOS-build.log"
