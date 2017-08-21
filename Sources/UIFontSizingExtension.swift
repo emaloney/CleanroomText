@@ -495,7 +495,7 @@ extension UIFont
     {
         let rect = string.boundingRect(with: maxSize,
             options: [.usesFontLeading, .usesLineFragmentOrigin, .truncatesLastVisibleLine],
-            attributes: [NSFontAttributeName: self, NSParagraphStyleAttributeName: paragraphStyle],
+            attributes: [.font: self, .paragraphStyle: paragraphStyle],
             context: nil)
 
         let size: CGSize
