@@ -14,6 +14,7 @@
 		3B475CE71DB472730047D397 /* StringTrimExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B475CE21DB472730047D397 /* StringTrimExtension.swift */; };
 		3B475CE81DB472730047D397 /* UIFontSizingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B475CE31DB472730047D397 /* UIFontSizingExtension.swift */; };
 		3B90590D1DAECB5200B4EEC0 /* CleanroomText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9059031DAECB5200B4EEC0 /* CleanroomText.framework */; };
+		3B9C2E8C1F4E22A1004C94B2 /* UIFontMonospacedNumbersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C2E8B1F4E22A1004C94B2 /* UIFontMonospacedNumbersExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3B9059031DAECB5200B4EEC0 /* CleanroomText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B90590C1DAECB5200B4EEC0 /* CleanroomTextUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomTextUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B90592C1DAECD9800B4EEC0 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Tests.plist"; sourceTree = "<group>"; };
+		3B9C2E8B1F4E22A1004C94B2 /* UIFontMonospacedNumbersExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontMonospacedNumbersExtension.swift; sourceTree = "<group>"; };
 		3BA33BE81EC362080009FACE /* Info-Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Target.plist"; sourceTree = "<group>"; };
 		3BE9C6521E9E99F0002F2412 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		3BE9C6531E9E99F0002F2412 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				3B475CDF1DB472730047D397 /* Pluralizer.swift */,
 				3B475CE11DB472730047D397 /* StringRepeatExtension.swift */,
 				3B475CE21DB472730047D397 /* StringTrimExtension.swift */,
+				3B9C2E8B1F4E22A1004C94B2 /* UIFontMonospacedNumbersExtension.swift */,
 				3B475CE31DB472730047D397 /* UIFontSizingExtension.swift */,
 			);
 			path = Sources;
@@ -239,6 +242,7 @@
 				3B475CE71DB472730047D397 /* StringTrimExtension.swift in Sources */,
 				3B475CE61DB472730047D397 /* StringRepeatExtension.swift in Sources */,
 				3B475CE41DB472730047D397 /* Pluralizer.swift in Sources */,
+				3B9C2E8C1F4E22A1004C94B2 /* UIFontMonospacedNumbersExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
