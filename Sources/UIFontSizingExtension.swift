@@ -33,11 +33,11 @@ extension UIFont
      - returns: The size required to draw the text string, with the width and
      height components rounded up to the nearest integer (whole-pixel) value.
      */
-    public func sizeOf(string: String, maxWidth: CGFloat)
+    public func sizeOf(string: String, maxWidth: CGFloat = .greatestFiniteMagnitude)
         -> CGSize
     {
         return sizeOf(string: string,
-            maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
+            maxSize: CGSize(width: maxWidth, height: .greatestFiniteMagnitude),
             lineBreakMode: .byWordWrapping,
             fractional: false)
     }
@@ -108,11 +108,11 @@ extension UIFont
 
      - returns: The size required to draw the text string.
     */
-    public func sizeOf(string: String, maxWidth: CGFloat, fractional allowFractionalSize: Bool)
+    public func sizeOf(string: String, maxWidth: CGFloat = .greatestFiniteMagnitude, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeOf(string: string,
-            maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
+            maxSize: CGSize(width: maxWidth, height: .greatestFiniteMagnitude),
             lineBreakMode: .byWordWrapping,
             fractional: allowFractionalSize)
     }
@@ -187,11 +187,11 @@ extension UIFont
 
      - returns: The size required to draw the text string.
     */
-    public func sizeOf(string: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode)
+    public func sizeOf(string: String, maxWidth: CGFloat = .greatestFiniteMagnitude, lineBreakMode: NSLineBreakMode)
         -> CGSize
     {
         return sizeOf(string: string,
-            maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
+            maxSize: CGSize(width: maxWidth, height: .greatestFiniteMagnitude),
             lineBreakMode: lineBreakMode,
             fractional: false)
     }
@@ -266,11 +266,11 @@ extension UIFont
 
      - returns: The size required to draw the text string.
     */
-    public func sizeOf(string: String, maxWidth: CGFloat, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
+    public func sizeOf(string: String, maxWidth: CGFloat = .greatestFiniteMagnitude, lineBreakMode: NSLineBreakMode, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeOf(string: string,
-            maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
+            maxSize: CGSize(width: maxWidth, height: .greatestFiniteMagnitude),
             lineBreakMode: lineBreakMode,
             fractional: allowFractionalSize)
     }
@@ -353,11 +353,11 @@ extension UIFont
      - returns: The size required to draw the text string, with the width and
      height components rounded up to the nearest integer (whole-pixel) value.
     */
-    public func sizeOf(string: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle)
+    public func sizeOf(string: String, maxWidth: CGFloat = .greatestFiniteMagnitude, paragraphStyle: NSParagraphStyle)
         -> CGSize
     {
         return sizeOf(string: string,
-            maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
+            maxSize: CGSize(width: maxWidth, height: .greatestFiniteMagnitude),
             paragraphStyle: paragraphStyle,
             fractional: false)
     }
@@ -434,11 +434,11 @@ extension UIFont
 
      - returns: The size required to draw the text string.
     */
-    public func sizeOf(string: String, maxWidth: CGFloat, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
+    public func sizeOf(string: String, maxWidth: CGFloat = .greatestFiniteMagnitude, paragraphStyle: NSParagraphStyle, fractional allowFractionalSize: Bool)
         -> CGSize
     {
         return sizeOf(string: string,
-            maxSize: CGSize(width: maxWidth, height: CGFloat(Int64.max)),
+            maxSize: CGSize(width: maxWidth, height: .greatestFiniteMagnitude),
             paragraphStyle: paragraphStyle,
             fractional: allowFractionalSize)
     }
