@@ -6,6 +6,8 @@
 //  Copyright © 2017 Gilt Groupe. All rights reserved.
 //
 
+#if !os(macOS)
+
 import UIKit
 
 extension UIFont
@@ -19,3 +21,5 @@ extension UIFont
         return UIFont(descriptor: fontDescriptor.addingAttributes(attributes), size: 0)
     }
 }
+
+#endif
