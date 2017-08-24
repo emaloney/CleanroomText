@@ -17,7 +17,7 @@ extension UIFont
      digits.
      */
     public var withMonospacedDigits: UIFont {
-        let attributes = [UIFontDescriptorFeatureSettingsAttribute: [[UIFontFeatureTypeIdentifierKey: kNumberSpacingType, UIFontFeatureSelectorIdentifierKey: kMonospacedNumbersSelector]]]
+        let attributes: [UIFontDescriptor.AttributeName: [UIFontDescriptor.FeatureKey: Any]] = [.featureSettings: [.featureIdentifier: kNumberSpacingType, .typeIdentifier: kMonospacedNumbersSelector]]
         return UIFont(descriptor: fontDescriptor.addingAttributes(attributes), size: 0)
     }
 }
