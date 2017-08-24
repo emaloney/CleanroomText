@@ -38,7 +38,8 @@ extension UIFont
      fractional (non-integer sub-pixel) values. If `false`, the width and
      height components rounded up to the nearest integer (whole-pixel) value.
 
-     - returns: The size required to draw the text string.
+     - returns: The size required to draw the text string, constrained to the
+     given `maxWidth` and `maxHeight`.
      */
     public func size(of string: String,
                      maxWidth: CGFloat = .greatestFiniteMagnitude,
@@ -69,7 +70,8 @@ extension UIFont
      fractional (non-integer, sub-pixel) values. If `false`, the width and
      height components rounded up to the nearest integer (whole-pixel) value.
 
-     - returns: The size required to draw the text string.
+     - returns: The size required to draw the text string, constrained to the
+     given `maxSize`.
      */
     public func size(of string: String,
                      maxSize: CGSize,
@@ -108,7 +110,8 @@ extension UIFont
      fractional (sub-pixel) values. If `false`, the width and height components
      rounded up to the nearest integer (whole-pixel) value.
 
-     - returns: The size required to draw the text string.
+     - returns: The size required to draw the text string, constrained to the
+     given `maxWidth` and `maxHeight`.
     */
     public func size(of string: String,
                      maxWidth: CGFloat = .greatestFiniteMagnitude,
@@ -139,7 +142,8 @@ extension UIFont
      fractional (sub-pixel) values. If `false`, the width and height components
      rounded up to the nearest integer (whole-pixel) value.
 
-     - returns: The size required to draw the text string.
+     - returns: The size required to draw the text string, constrained to the
+     given `maxSize`.
     */
     public func size(of string: String,
                      maxSize: CGSize,
