@@ -12,13 +12,15 @@ CleanroomText is part of [the Cleanroom Project](https://github.com/gilt/Cleanro
 
 This is the `master` branch. It uses **Swift 3.1** and **requires Xcode 8.3** to compile.
 
+If you need Swift 4.0 compatibility, use the [`swift-4`](https://github.com/emaloney/CleanroomText/tree/swift-4) branch, which requires Xcode 9.0 beta.
+
 
 #### Current status
 
 Branch|Build status
 --------|------------------------
 [`master`](https://github.com/emaloney/CleanroomText)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomText)
-
+[`swift-4`](https://github.com/emaloney/CleanroomText/tree/swift-4)|[![Build status: swift-4 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift-4)](https://travis-ci.org/emaloney/CleanroomText)
 
 ### License
 
@@ -36,7 +38,7 @@ The simplest way to integrate CleanroomText is with the [Carthage](https://githu
 First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
 ```
-github "emaloney/CleanroomText" ~> 1.4.0
+github "emaloney/CleanroomText" ~> 2.0.0
 ```
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).

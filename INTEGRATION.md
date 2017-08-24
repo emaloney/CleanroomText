@@ -44,12 +44,12 @@ Within to your project’s root directory, Carthage-based projects will store a 
 To integrate CleanroomText in your workspace, you would start by adding the following line to the `Cartfile`:
 
 ```
-github "emaloney/CleanroomText" ~> 1.4.0
+github "emaloney/CleanroomText" ~> 2.0.0
 ```
 
-This specifies that Carthage use the latest version of CleanroomText that is API-compatible with 1.4.0, i.e. any 1.4.*x* version.
+This specifies that Carthage use the latest version of CleanroomText that is API-compatible with 2.0.0, i.e. any 2.0.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomText/releases); there may be a newer version than 1.4.0 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomText/releases); there may be a newer version than 2.0.0 that is no longer API-compatible.
 
 ### 2. Download CleanroomText using Carthage
 
