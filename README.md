@@ -10,9 +10,7 @@ CleanroomText is part of [the Cleanroom Project](https://github.com/gilt/Cleanro
 
 ### Swift compatibility
 
-**Important:** This is the `swift-4` branch. It uses **Swift 4.0** and **requires Xcode 9.0 beta** to compile.
-
-If you need Swift 3.1 compatibility, use the [`master`](https://github.com/emaloney/CleanroomText) branch, which requires Xcode 8.3.
+This is the `master` branch. It uses **Swift 4.0** and **requires Xcode 9.0** to compile.
 
 
 #### Current status
@@ -20,11 +18,11 @@ If you need Swift 3.1 compatibility, use the [`master`](https://github.com/emalo
 Branch|Build status
 --------|------------------------
 [`master`](https://github.com/emaloney/CleanroomText)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomText)
-[`swift-4`](https://github.com/emaloney/CleanroomText/tree/swift-4)|[![Build status: swift-4 branch](https://travis-ci.org/emaloney/CleanroomText.svg?branch=swift-4)](https://travis-ci.org/emaloney/CleanroomText)
+
 
 ### License
 
-CleanroomText is distributed under [the MIT license](https://github.com/emaloney/CleanroomText/blob/swift-4/LICENSE).
+CleanroomText is distributed under [the MIT license](https://github.com/emaloney/CleanroomText/blob/master/LICENSE).
 
 CleanroomText is provided for your use—free-of-charge—on an as-is basis. We make no guarantees, promises or apologies. *Caveat developer.*
 
@@ -38,12 +36,12 @@ The simplest way to integrate CleanroomText is with the [Carthage](https://githu
 First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
 ```
-github "emaloney/CleanroomText" ~> 2.0.0
+github "emaloney/CleanroomText" ~> 3.0.0
 ```
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
 
-Finally, you’ll need to [integrate CleanroomText into your project](https://github.com/emaloney/CleanroomText/blob/swift-4/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomText/swift-4/Documentation/API/index.html) it provides.
+Finally, you’ll need to [integrate CleanroomText into your project](https://github.com/emaloney/CleanroomText/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomText/master/Documentation/API/index.html) it provides.
 
 Once successfully integrated, just add the following statement to any Swift file where you want to use CleanroomText:
 
@@ -51,7 +49,7 @@ Once successfully integrated, just add the following statement to any Swift file
 import CleanroomText
 ```
 
-See [the Integration document](https://github.com/emaloney/CleanroomText/blob/swift-4/INTEGRATION.md) for additional details on integrating CleanroomText into your project.
+See [the Integration document](https://github.com/emaloney/CleanroomText/blob/master/INTEGRATION.md) for additional details on integrating CleanroomText into your project.
 
 ## Using CleanroomText
 
@@ -112,7 +110,7 @@ let threeGeese = gooser.term(quantity: 3)    // threeGeese will be "3 geese"
 
 ### API documentation
 
-For detailed information on using CleanroomText, [API documentation](https://rawgit.com/emaloney/CleanroomText/swift-4/Documentation/API/index.html) is available.
+For detailed information on using CleanroomText, [API documentation](https://rawgit.com/emaloney/CleanroomText/master/Documentation/API/index.html) is available.
 
 
 ## About
